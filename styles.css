@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: #FFEEDD;
+}
+
+.pomoBase {
+    position: absolute;
+    width: 588px;
+    height: 588px;
+    z-index: -400;
+}
+
+.pomoScreen {
+    width: 459px;
+    height: 355px;
+    z-index: -300;
+}
+
+.button {
+    width: 108px;
+    height: 108px;
+}
+
+.buttonbx {
+    display: flex;
+    gap: 13px;
+}
+
+.controls {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerpomo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pomodoro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.timerSelected {
+    position: absolute;
+    font-family: "Rubik", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    background-color: #9381FF;
+    width: 162px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 500px;
+    margin-top: 25px;
+    transition: all cubic-bezier(0,.02,0,.99) 500ms;
+
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+}
+
+.time {
+    font-family: "Rubik", sans-serif;
+    font-weight: 900;
+    font-size: 96px;
+    color: white;
+}
+
+.subtime {
+    font-family: "Rubik", sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    width: fit-content;
+    color: #000067;
+}
+
+.timebx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.timeDisplay {
+    display: flex;
+    gap: 57px;
+    position: absolute;
+    margin-top: 102px;
+}
+
+.toggleBase {
+    position: absolute;
+    width: 204px;
+    height: 108px;
+}
+
+.toggleKnob {
+    position: absolute;
+    width: 108px;
+    height: 108px;
+
+    transition: all cubic-bezier(0,.02,0,.99) 500ms;
+
+}
+
+.toggle {
+    display: flex;
+    justify-content: flex-start;
+    width: 204px;
+    height: 108px;
+
+}
+
+.toggleIcons {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 300;
+
+    transition: all cubic-bezier(0,.02,0,.99) 500ms;
+
+
+}
+
+.knob {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    width: 108px;
+    height: 108px;
+}

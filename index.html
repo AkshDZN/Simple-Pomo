@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Pomo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="pomodoro">
+        <img src="assets/pomoBase.svg" alt="pomoBase" class="pomoBase">
+
+        <div class="innerpomo">
+
+
+            <div class="screen">
+                <div class="timerSelected" id="timerSelected">20 - min</div>
+
+                <div class="timeDisplay">
+                    <div class="timebx">
+                        <div class="time">12</div>
+                        <div class="subtime">MIN</div>
+                    </div>
+                
+                    <div class="timebx">
+                        <div class="time">34</div>
+                        <div class="subtime">SEC</div>
+                    </div>
+                </div>
+                
+                <img src="assets/pomoScreen.svg" alt="pomoScreen" class="pomoScreen">
+            </div>
+
+    
+    
+            <div class="controls">
+                <div class="buttonbx">
+                    <img src="assets/button_play.svg" alt="button_play" class="button">
+                    <img src="assets/button_stop.svg" alt="button_stop" class="button">
+
+                    <div class="toggle" id="toggle" onclick="changeState()">
+                        <img src="assets/toggle/toggleBase.svg" alt="toggleBase" class="toggleBase">
+                        <div class="knob">
+                            <img src="assets/toggle/🦆 emoji _stopwatch_.svg" alt="Normal" class="toggleIcons" id="normal">
+                            <img src="assets/toggle/🦆 emoji _hot beverage_.png" alt="Normal" class="toggleIcons" id="short">
+                            <img src="assets/toggle/🦆 emoji _beach with umbrella_.png" alt="Normal" class="toggleIcons" id="long">
+                            <img src="assets/toggle/toggleKnob.svg" alt="toggleKnob" class="toggleKnob" id="toggleKnob">
+                        </div>
+                    </div>
+                </div>
+            
+                
+            </div>
+        </div>
+    </div>  
+
+    <script src="index.js"></script>
+
+
+
+
+</body>
+</html>
