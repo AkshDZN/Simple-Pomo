@@ -77,8 +77,49 @@ function showOrHideTimerSelected() {
     if (toggleState === 1) {
         timerSelected.style.opacity = '100';
         timerSelected.style.width = '162px';
+        timerSelected.style.scale= '1';
     } else {
         timerSelected.style.opacity = '0';
         timerSelected.style.width = '300px';
+        timerSelected.style.scale= '1.8';
     }
 }
+
+// timer
+
+const minuteText = document.getElementById('minute');
+const secondText = document.getElementById('second');
+const stop = document.getElementById('stop');
+
+let timerId;
+let timer;
+let lastDuration = 20*60;
+
+function startTimer(duration) {
+    timer = duration;
+
+    timerId = setInterval(() => {
+        timer--;
+
+        const minutes = Math.floor(timer/60);
+        const seconds = timer % 60;
+
+        minuteText.innerHTML = minutes;
+        secondText.innerHTML = seconds;
+
+        if (timer === 0) {
+            clearInterval(timerId);
+            alert("Time's Up");
+        }
+    }, 1000);
+    
+    return timerId;
+    return timer;
+
+}
+
+stop.addEventListener('click', () => {
+    clearInterval(timerId);
+    console.log(timer);
+    lastDuration = timer;
+})

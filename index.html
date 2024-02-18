@@ -19,12 +19,12 @@
 
                 <div class="timeDisplay">
                     <div class="timebx">
-                        <div class="time">12</div>
+                        <div class="time" id="minute">12</div>
                         <div class="subtime">MIN</div>
                     </div>
                 
                     <div class="timebx">
-                        <div class="time">34</div>
+                        <div class="time" id="second">34</div>
                         <div class="subtime">SEC</div>
                     </div>
                 </div>
@@ -36,8 +36,8 @@
     
             <div class="controls">
                 <div class="buttonbx">
-                    <img src="assets/button_play.svg" alt="button_play" class="button">
-                    <img src="assets/button_stop.svg" alt="button_stop" class="button">
+                    <img src="assets/button_play.svg" alt="button_play" class="button" onclick="startTimer(lastDuration)">
+                    <img src="assets/button_stop.svg" alt="button_stop" class="button" id="stop">
 
                     <div class="toggle" id="toggle" onclick="changeState()">
                         <img src="assets/toggle/toggleBase.svg" alt="toggleBase" class="toggleBase">
